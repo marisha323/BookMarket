@@ -1,0 +1,25 @@
+﻿@page "{id?}"
+@model BookMarket.Pages.EditModel
+@{
+}
+
+<form method="post">
+    <div class="form-row">
+        <div class="col">
+            <input type="text" name="nameBooks" class="form-control" value="@Model.booksShop?.Name" placeholder="Book name">
+        </div>
+        <div class="col">
+            <input type="text" name="authorName" class="form-control" value="@Model.booksShop?.AuthoName" placeholder="Author name">
+        </div>
+        <div class="col">
+            <input type="text" name="styleBooks" class="form-control" value="@Model.booksShop?.Style" placeholder="Style">
+        </div>
+        <div class="col">
+            <input type="text" name="publisherBooks" class="form-control" value="@Model.booksShop?.Publisher" placeholder="Publisher">
+        </div>
+        <div class="col">
+            <input type="text" name="year" class="form-control" value="@Model.booksShop?.Year" placeholder="Year">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+</form>
